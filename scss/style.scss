@@ -1,10 +1,86 @@
 @import "_nullstyle.scss";
 
-.title {
+$color-background-light: #fff;
+$color-background-dark: #1f2e35;
+$color-red: #ff565e;
+$color-yellow: #ffc542;
+$color-green: #3ed598;
+
+body.light {
+    background-color: $color-background-light;
+    .block-wrap {
+        // background: #edf1fa;
+        background: #fff;
+        box-shadow: 0px 1px 14px #ececfd;
+    }
+    .title,
+    .subtitle,
+    .caption,
+    .text {
+        font-family: "SF Pro";
+        color: #000;
+    }
+}
+body.dark {
+    background-color: $color-background-dark;
+    .block-wrap {
+        background: #30444e;
+        box-shadow: 0px 1px 14px #19282f;
+    }
+    .title,
+    .subtitle,
+    .caption,
+    .text {
+        font-family: "SF Pro";
+        color: #fff;
+    }
+}
+
+.wrapper {
+    max-width: 435px;
+    padding-left: 30px;
+    padding-right: 28px;
+    margin: 0 auto;
+}
+
+.title,
+.subtitle,
+.caption,
+.text {
     font-family: "SF Pro";
-    font-weight: 600;
+}
+
+.title {
+    font-size: 42px;
+    line-height: 116%;
+    font-weight: 700;
+}
+
+.title-crumbs {
+    font-size: 24px;
+    line-height: 116%;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 116%;
+    font-weight: 700;
+}
+
+.caption {
+    font-size: 16px;
+    line-height: 118%;
+    font-weight: 700;
 }
 
 .text {
-    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.block-wrap {
+    border-radius: 25px;
+    padding: 33px 24px;
 }
