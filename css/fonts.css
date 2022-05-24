@@ -56,3 +56,79 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'marvie-font';
+    src: url('../fonts/marvie-font.eot?sikm10');
+    src: url('../fonts/marvie-font.eot?sikm10#iefix') format('embedded-opentype'),
+        url('../fonts/marvie-font.ttf?sikm10') format('truetype'),
+        url('../fonts/marvie-font.woff?sikm10') format('woff'),
+        url('../fonts/marvie-font.svg?sikm10#marvie-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="i-"],
+[class*=" i-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'marvie-font' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.i-gift:before {
+    content: "\e903";
+}
+
+.i-upload:before {
+    content: "\e90b";
+}
+
+.i-heart:before {
+    content: "\e904";
+}
+
+.i-cutlery:before {
+    content: "\e901";
+}
+
+.i-increase:before {
+    content: "\e905";
+}
+
+.i-play:before {
+    content: "\e906";
+}
+
+.i-card:before {
+    content: "\e900";
+}
+
+.i-settings:before {
+    content: "\e908";
+}
+
+.i-star-fill:before {
+    content: "\e909";
+}
+
+.i-star-hollow:before {
+    content: "\e90a";
+}
+
+.i-fire:before {
+    content: "\e902";
+}
+
+.i-point:before {
+    content: "\e907";
+}
