@@ -72,45 +72,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Null End*/
-body.light {
-  background-color: #fff;
-}
-
-body.light .block-wrap {
-  background: #fff;
-  -webkit-box-shadow: 0px 1px 14px #ececfd;
-          box-shadow: 0px 1px 14px #ececfd;
-}
-
-body.light .title,
-body.light .subtitle,
-body.light .caption,
-body.light .text {
-  font-family: "SF Pro";
-  color: #000;
-}
-
-body.dark {
+body {
   background-color: #1f2e35;
 }
 
-body.dark .block-wrap {
+.block-wrap {
   background: #30444e;
   -webkit-box-shadow: 0px 1px 14px #19282f;
           box-shadow: 0px 1px 14px #19282f;
 }
 
-body.dark .title,
-body.dark .subtitle,
-body.dark .caption,
-body.dark .text {
-  font-family: "SF Pro";
+.title,
+.subtitle,
+.caption,
+.text {
   color: #fff;
 }
 
 .wrapper {
-  max-width: 435px;
-  padding-left: 30px;
+  max-width: 375px;
+  padding-left: 28px;
   padding-right: 28px;
   margin: 0 auto;
 }
@@ -155,4 +136,199 @@ body.dark .text {
 .block-wrap {
   border-radius: 25px;
   padding: 33px 24px;
+}
+
+.icon {
+  font-family: "marvie-font";
+}
+
+.feed {
+  padding-top: 54px;
+}
+
+.feed__title {
+  margin-bottom: 20px;
+}
+
+.feed__feed-item {
+  margin-bottom: 16px;
+}
+
+.feed__feed-item:last-child {
+  margin-bottom: 0;
+}
+
+.double-stroke {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.double-stroke::before {
+  content: "ok";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.favorites-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3ed598;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.favorites-widget__info {
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
+}
+
+.favorites-widget__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.favorites-widget__icon {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 19px;
+}
+
+.favorites-widget__icon::before {
+  content: "\e90a";
+  font-size: 20px;
+  color: #fff;
+}
+
+.favorites-widget__cta {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.favorites-widget__button {
+  width: 60px;
+  height: 60px;
+}
+
+.favorites-widget__button::before {
+  width: 48px;
+  height: 48px;
+  font-family: "SF Pro";
+  font-weight: 500;
+  font-size: 14px;
+  color: #3ed598;
+}
+
+.present-widget {
+  padding-bottom: 45px;
+  background-color: #ffc542;
+}
+
+.present-widget__icon {
+  margin-bottom: 16px;
+}
+
+.present-widget__icon::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: "\e903";
+  font-size: 18px;
+  color: #fff;
+}
+
+.present-widget__title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.present-widget__text {
+  text-align: center;
+}
+
+.upload-widget {
+  background-color: #ff565e;
+}
+
+.upload-widget__title {
+  margin-bottom: 8px;
+}
+
+.upload-widget__text {
+  margin-bottom: 30px;
+}
+
+.upload-widget__upload {
+  height: 156px;
+  border: 1px dashed #ffffff;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.upload-widget__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.upload-widget__icon::before {
+  width: 68px;
+  height: 68px;
+  content: "\e90b";
+  font-size: 20px;
+  color: #ff565e;
 }

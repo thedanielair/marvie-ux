@@ -6,39 +6,54 @@ $color-red: #ff565e;
 $color-yellow: #ffc542;
 $color-green: #3ed598;
 
-body.light {
-    background-color: $color-background-light;
-    .block-wrap {
-        // background: #edf1fa;
-        background: #fff;
-        box-shadow: 0px 1px 14px #ececfd;
-    }
-    .title,
-    .subtitle,
-    .caption,
-    .text {
-        font-family: "SF Pro";
-        color: #000;
-    }
-}
-body.dark {
+// body.light {
+//     background-color: $color-background-light;
+//     .block-wrap {
+//         // background: #edf1fa;
+//         background: #fff;
+//         box-shadow: 0px 1px 14px #ececfd;
+//     }
+//     .title,
+//     .subtitle,
+//     .caption,
+//     .text {
+//         color: #000;
+//     }
+// }
+// body.dark {
+//     background-color: $color-background-dark;
+//     .block-wrap {
+//         background: #30444e;
+//         box-shadow: 0px 1px 14px #19282f;
+//     }
+//     .title,
+//     .subtitle,
+//     .caption,
+//     .text {
+//         color: #fff;
+//     }
+// }
+
+//DARK THEME
+body {
     background-color: $color-background-dark;
-    .block-wrap {
-        background: #30444e;
-        box-shadow: 0px 1px 14px #19282f;
-    }
-    .title,
-    .subtitle,
-    .caption,
-    .text {
-        font-family: "SF Pro";
-        color: #fff;
-    }
 }
 
+.block-wrap {
+    background: #30444e;
+    box-shadow: 0px 1px 14px #19282f;
+}
+.title,
+.subtitle,
+.caption,
+.text {
+    color: #fff;
+}
+//
+
 .wrapper {
-    max-width: 435px;
-    padding-left: 30px;
+    max-width: 375px;
+    padding-left: 28px;
     padding-right: 28px;
     margin: 0 auto;
 }
@@ -83,4 +98,158 @@ body.dark {
 .block-wrap {
     border-radius: 25px;
     padding: 33px 24px;
+}
+
+.icon {
+    font-family: "marvie-font";
+}
+
+//FEED//
+
+.feed {
+    padding-top: 54px;
+    &__wrapper {
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__feed-list {
+    }
+
+    &__feed-item {
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.double-stroke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    &::before {
+        content: "ok";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}
+
+.favorites-widget {
+    display: flex;
+    background-color: $color-green;
+    justify-content: space-between;
+    &__info {
+        flex-basis: 67%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__icon {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 19px;
+        &::before {
+            content: "\e90a";
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+    &__cta {
+        flex-basis: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button {
+        width: 60px;
+        height: 60px;
+        &::before {
+            width: 48px;
+            height: 48px;
+            font-family: "SF Pro";
+            font-weight: 500;
+            font-size: 14px;
+            color: #3ed598;
+        }
+    }
+}
+
+.present-widget {
+    padding-bottom: 45px;
+    background-color: $color-yellow;
+    &__icon {
+        margin-bottom: 16px;
+        &::before {
+            display: flex;
+            justify-content: center;
+            content: "\e903";
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    &__title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+.upload-widget {
+    background-color: $color-red;
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__upload {
+        height: 156px;
+        border: 1px dashed #ffffff;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+
+        &::before {
+            width: 68px;
+            height: 68px;
+
+            content: "\e90b";
+            font-size: 20px;
+            color: #ff565e;
+        }
+    }
 }
